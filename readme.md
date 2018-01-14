@@ -34,4 +34,5 @@ Phantomjs中文网址：http://www.w3cbus.com/tool/phantomjs.html
 >npm run dev //运行脚本
 
 ####关于打包
+
 之后再代码重构之后会对项目进行重构，然后通过一些了的工具进行代码优化，打包压缩等等。
