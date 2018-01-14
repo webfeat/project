@@ -45,7 +45,7 @@ var insertInto = function (obj) {
                     <span class="icon-right" onclick="deleteImage(this,'${obj.src}','${obj.name}')">x</span>
                     <h4>${obj.name}</h4>
                 </span>
-                    <img src="${obj.src.substr(10,obj.src.length+1)}" style="max-height:13rem;min-width: 22rem ">
+                    <img src="${obj.src.substr(10,obj.src.length+1)}" style="max-height:13rem;min-width: 22rem "/>
             </div>
         `;
     $("#plus").before($(html));
