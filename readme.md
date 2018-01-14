@@ -7,10 +7,12 @@
 
 #### 前端
 
--jquery + Metro
+- jquery 
+- Metro
 
-####环境搭建
-####1 phantom环境搭建
+#### 环境搭建
+#### 1 phantom环境搭建
+
 `npm install phantomjs -g`
 
 一些平台运行命令后自动搭建号phantom环境，
@@ -24,7 +26,8 @@
 Phantomjs文档官网：http://phantomjs.org/
 PhantomJs多平台下载官网：http://phantomjs.org/download.html
 Phantomjs中文网址：http://www.w3cbus.com/tool/phantomjs.html
-####运行
+
+#### 运行
 
 `
 > npm install //安装依赖
@@ -32,7 +35,8 @@ Phantomjs中文网址：http://www.w3cbus.com/tool/phantomjs.html
 > node index.js //运行脚本
 
 >npm run dev //运行脚本
+`
 
-####关于打包
+#### 关于打包
 
 之后再代码重构之后会对项目进行重构，然后通过一些了的工具进行代码优化，打包压缩等等。
