@@ -1,0 +1,87 @@
+/*字体*/
+div,body,p{
+    font-size: 1rem;
+}
+
+
+@media screen and (min-width: 400px){
+    div,body,p{
+        font-size: 0.1rem;
+    }
+}
+
+body{
+    position: relative;
+}
+
+.content{
+    width: 50%;
+    height: 50%;
+    overflow: auto;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+body {min-width: 550px;}
+.col {position: relative;float: left;}
+
+#container {padding: 0 1rem 0 1rem;
+    position: relative;
+    top: 0.5rem;}
+
+#main {width: 90%;height: 400px;}
+
+#main img{
+    padding-left: 1.5rem;
+}
+
+#main figcaption{
+    padding-left: 1.5rem;
+}
+
+#left {width: 1.5rem;height: 400px;margin-left: -90%;left: -190px;}
+
+#left ul{
+    list-style: none;
+}
+
+ul{
+    color: #4aa3df;
+}
+
+ul li{
+    padding: 0.04rem 0.1rem 0.1rem 0.1rem;
+    background-color: #f3f9fd;
+    transition: margin-bottom 1s, margin-top 1s, box-shadow 1s,width 2s;
+}
+
+ul li:hover{
+    box-shadow: 10px 10px 5px #888888;
+    margin-bottom: 0.05rem;
+    margin-top: 0.05rem;
+    transition: width 2s;
+}
+
+ .active{
+     background-color: #258cd1;
+     color: #f3f9fd;
+    box-shadow: 10px 10px 5px #888888;
+    margin-bottom:0.05rem;
+    margin-top: 0.05rem;
+}
+
+#right {width: 190px;height: 400px;margin-left: -190px;right: -190px;background-color: #FF0000;}
+
+.right{
+    background: url("../image/timg.jpg");
+    background-repeat: no-repeat;
+    background-position:right;
+}
+
+img{
+    position: relative;
+    height: 1.42rem;
+    margin-top: 0.25rem;
+    width: 2.5rem;
+    margin-left: -0.29rem;
+}

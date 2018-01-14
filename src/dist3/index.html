@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>书签</title>
+    <link rel="stylesheet" href="metro-dist/css/metro-colors.css">
+    <link rel="stylesheet" href="metro-dist/css/metro-responsive.css">
+    <link rel="stylesheet" href="metro-dist/css/metro-rtl.css">
+    <link rel="stylesheet" href="metro-dist/css/metro-schemes.css">
+    <link rel="stylesheet" href="metro-dist/css/metro.css">
+    <link rel="stylesheet" href="metro-dist/css/main.css">
+    <link rel="stylesheet" href="metro-dist/css/metro-icons.css">
+    <script src="metro-dist/js/jquery.js"></script>
+    <script src="metro-dist/js/metro.js"></script>
+    <script src="metro-dist/js/axios.js"></script>
+</head>
+<body>
+<!--背景画布-->
+<canvas id="canv"></canvas>
+<nav class="codrops-demos">
+    <div>
+
+        <!--左边与顶部菜单栏-->
+
+        <div id="left-charm" class="charm left-side" data-role="charm" data-position="left"
+             style="opacity: 1; display: block; left: 0px;  right: auto; top: 0px; bottom: 0px;z-index: 500">
+            <h1 class="text-light">新增</h1>
+            <form>
+                <div class="input-control text">
+                    <input type="text" id="url" placeholder="url">
+                </div><br/>
+                <div class="input-control text">
+                    <input type="text" id="name" placeholder="名称">
+                </div><br/>
+                <div class="input-control select" >
+                    <select id="type" name="type" onchange="selectType(this)">
+                        <option value="df" selected>默认</option>
+                        <option value="up">上传</option>
+                        <option value="ic">图标</option>
+                    </select>
+                </div>
+                <br/>
+                <div id="fileItem" class="input-control file" data-role="input">
+                    <input type="file" id="file">
+                    <button class="button"><span class="mif-folder"></span></button>
+                </div>
+                <br/>
+                <span class="button primary" onclick="submitUrl()">提交</span>
+        </form>
+                <span class="charm-closer"></span>
+        </div>
+
+        <div  id="top-charm" class="charm top-side" data-role="charm" data-position="top"
+                style="opacity: 1; display: block; top: 0px; bottom: auto; left: 0px; right: 0px;">
+            <h1 class="text-light" style="display: inline-block">Top charm</h1>
+            <div class="input-control file form-search" data-role="input">
+                <input type="text">
+                <button class="button"><span class="mif-search"></span></button>
+            </div>
+        <span class="charm-closer"></span>
+        </div>
+        <div class="box" id="box">
+            <div id="plus" class="item icon" style="text-align: center;vertical-align: middle;padding: 4rem;">
+                <span class="mif-plus mif-2x" style="color: white;font-size: 6rem" onclick="toggleMetroCharm('#left-charm')"></span>
+            </div>
+        </div>
+    </div>
+</nav>
+<!--dialog 加载弹框-->
+<div  data-role="dialog" id="dialog" class="padding20 dialog" data-overlay="true" data-overlay-color="op-dark" data-overlay-click-close="true" style="width: auto; height: auto; visibility: visible; left: 533.5px; top: 246px;background-color: black">
+    <div class="cell padding20">
+        <div data-role="preloader" data-type="ring" style="margin: auto" class="preloader-ring"><div class="wrap"><div class="circle"></div></div><div class="wrap"><div class="circle"></div></div><div class="wrap"><div class="circle"></div></div><div class="wrap"><div class="circle"></div></div><div class="wrap"><div class="circle"></div></div></div>
+    </div>
+</div>
+
+</body>
+<script src="metro-dist/js/background.js"></script>
+<script src="metro-dist/js/storage.js"></script>
+<script src="metro-dist/js/eventLinsenterApi.js"></script>
+</html>

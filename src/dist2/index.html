@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/model/bop.css">
+    <link rel="stylesheet" href="css/model/main.css">
+    <script src="js/axios.js"></script>
+</head>
+<body>
+	<div class="htmleaf-container">
+		<h2 class="title">网址</h2>
+		<div class="carousel" data-gap="80">
+			<figure>
+		    	<!--<img src="img/1.jpg" alt="">-->
+				<!--<img src="img/2.jpg" alt="">-->
+				<!--<img src="img/3.jpg" alt="">-->
+				<!--<img src="img/4.jpg" alt="">-->
+				<!--&lt;!&ndash;<img src="img/5.jpg" alt="">&ndash;&gt;-->
+				<!--&lt;!&ndash;<img src="img/6.jpg" alt="">&ndash;&gt;-->
+				<!--&lt;!&ndash;<img src="img/7.jpg" alt="">&ndash;&gt;-->
+				<!--&lt;!&ndash;<img src="img/8.jpg" alt="">&ndash;&gt;-->
+			</figure>
+			<nav style="z-index: 10000">
+                <button class="nav add" onclick="materialLightAnime()">add</button>
+                <button class="nav prev">Prev</button>
+				<button class="nav next">Next</button>
+                <button class="nav remove">remove</button>
+			</nav>
+		</div>
+	</div>
+
+    <!--模态框部分-->
+
+    <!--黑色背景-->
+    <div class="shade" id="shade">
+    </div>
+    <!--白色模态框-->
+    <div class="shade-light" id="shade-light">
+    </div>
+    <!--模态框内容-->
+    <div id="material-light-anime">
+            <img src="img/closed58.png" class="close" onclick="exitLightAnime()" width="2em" height="1em">
+
+        <h1 id="head-anime">Want to use this?</h1>
+        <p id="text-anime">
+        <div>
+            <label for="url">地址</label>
+            <input type="text" id="url" name="url" value="" placeholder="地址">
+        </div>
+        <div>
+            <label for="name">名称</label>
+            <input type="text" id="name" name="name" value="" placeholder="名称">
+        </div>
+        </p>
+        <br>
+        <div class="exit" onclick="submitNewBook()">submit</div>
+    </div>
+    </div>
+
+    <script src="js/bop-js.js"></script>
+	<script src="js/storage.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+{
+  "_from": "metro-dist",
+  "_id": "metro-dist@3.0.17",
+  "_inBundle": false,
+  "_integrity": "sha1-Tn0apVYxmim8qOEpQiWzp2Nz7Ig=",
+  "_location": "/metro-dist",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "metro-dist",
+    "name": "metro-dist",
+    "escapedName": "metro-dist",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://registry.npm.taobao.org/metro-dist/download/metro-dist-3.0.17.tgz",
+  "_shasum": "4e7d1aa556319a29bca8e1294225b3a76373ec88",
+  "_spec": "metro-dist",
+  "_where": "E:\\学习目录\\Metro-UI-CSS",
+  "author": {
+    "name": "Sergey Pimenov"
+  },
+  "bugs": {
+    "url": "https://github.com/olton/Metro-UI-CSS.git"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "The front-end framework for developing responsive, mobile projects on the web in Windows Metro Style.",
+  "homepage": "http://metroui.org.ua",
+  "keywords": [
+    "css",
+    "less",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "framework",
+    "web",
+    "metro"
+  ],
+  "license": "MIT",
+  "name": "metro-dist",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olton/Metro-UI-CSS.git"
+  },
+  "version": "3.0.17"
+}
