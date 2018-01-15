@@ -23,6 +23,10 @@ var deleteImage = function (_self,src) {
     })
 }
 
+//定义跳转方法
+var stateGo = function (url) {
+    window.open('http://'+url);
+}
 
 //将数据转化为DOM
 var insertInto = function (obj) {
@@ -40,12 +44,12 @@ var insertInto = function (obj) {
     }
 
     var html = `
-          <div class="item" data-uuid="${obj.uuid}" data-name="${obj.name}">
+          <div class="item" data-uuid="${obj.uuid}" data-name="${obj.name}" >
                 <span class="title">
                     <span class="icon-right" onclick="deleteImage(this,'${obj.src}','${obj.name}')">x</span>
                     <h4>${obj.name}</h4>
                 </span>
-                    <img src="${obj.src.substr(10,obj.src.length+1)}" style="max-height:13rem;min-width: 22rem "/>
+                    <img onclick="stateGo('${obj.url}')" src="${obj.src.substr(10,obj.src.length+1)}" style="max-height:13rem;min-width: 22rem;cursor:pointer; "/>
             </div>
         `;
     $("#plus").before($(html));
@@ -216,6 +220,7 @@ openDialog();
 var promise = initDatas();
 promise.then(function (data) {
     var datas = data.data;
+    datas = datas.filter(function(obj){return !!obj.name});
     for(var i = 0 ; i < datas.length ;i++){
         datas[i].name = window.decodeURIComponent(datas[i].name);
         insertInto(datas[i]);

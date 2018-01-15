@@ -1,7 +1,7 @@
 # Welcome
 The front-end framework for developing projects on the web in Windows Metro Style, created and supported by Sergey Pimenov (aka olton) with the massive support and involvement of community.   
 
-## Current Version
+## Current VersionKmin4BJUJeG9rfJX
 
 ### 3.0.17
 

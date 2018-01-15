@@ -10,7 +10,8 @@ function generateUUid (){
 
 var readFromConfig = function () {
     var promise = new Promise(function (resolve,reject) {
-        fs.readFile('E:\\毕业设计\\project\\src\\nodemodule\\config\\config.json',function (err, data) {
+        fs.readFile('src/nodemodule/config/config.json',function (err, data) {
+            console.log(err);
             resolve(data);
         })
     })

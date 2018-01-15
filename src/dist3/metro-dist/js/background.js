@@ -297,8 +297,8 @@ var trans = {
         this.anim();
 
         window.addEventListener('mousemove', function(e) {
-            this.toX = (e.clientX - this.canvas.width / 2) * -0.5;
-            this.toY = (e.clientY - this.canvas.height / 2) * 0.5;
+            this.toX = (e.clientX - this.canvas.width / 2)* 0.1  ;
+            this.toY = (e.clientY - this.canvas.height / 2) * 0.1;
         }.bind(this));
         window.addEventListener('touchmove', function(e) {
             e.preventDefault();
