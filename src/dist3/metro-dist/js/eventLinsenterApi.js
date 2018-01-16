@@ -25,7 +25,11 @@ var deleteImage = function (_self,src) {
 
 //定义跳转方法
 var stateGo = function (url) {
-    window.open('http://'+url);
+    if(url.indexOf('http') <= -1 && url.indexOf('https') <= -1 ){
+        window.open('http://'+url);
+    }else{
+        window.open(url);
+    }
 }
 
 //将数据转化为DOM

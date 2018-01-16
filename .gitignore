@@ -1,1 +1,11 @@
 src/dist3/img/*
+node_modules/*
+.idea/*
+filelog.json
+filelog1.json
+filelog2.json
+jpeg
+*jpeg
+log.json
+log2.json
+log3.json
